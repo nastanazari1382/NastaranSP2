@@ -11,7 +11,7 @@ public class PrintedBook extends Title {
         this.pages = pages;
         this.copies = copies;
     }
-
+    @Override
     //Her beregner jeg point for printet bog
     public double calculatePoints() {
         return pages * convertLiteratureType() * copies;

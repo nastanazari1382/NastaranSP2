@@ -18,7 +18,7 @@ public class EBook extends Title {
         this.reach = reach;
         this.use = use;
     }
-
+    @Override
     //jeg beregner antal sider og ligger 10% hvis den er illustreret.
     public double calculatePoints() {
         double pages = (characters / 1800.0) + 20;

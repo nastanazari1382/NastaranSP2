@@ -11,7 +11,7 @@ public class AudioBook extends Title {
         this.durationInMinutes = durationInMinutes;
         this.copies = copies;
     }
-
+    @Override
     public double calculatePoints() {
         return (durationInMinutes * 0.5) * convertLiteratureType() * copies;
     }
